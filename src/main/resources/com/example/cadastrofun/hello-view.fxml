@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="521.0" prefWidth="773.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cadastrofun.Controller.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <StackPane prefHeight="520.0" prefWidth="703.0">
+         <VBox.margin>
+            <Insets bottom="-20.0" left="-18.0" right="-18.0" top="-20.0" />
+         </VBox.margin>
+         <children>
+            <ImageView fitHeight="521.0" fitWidth="421.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" StackPane.alignment="CENTER_LEFT">
+               <image>
+                  <Image url="@Image/vista-de-empresarios-3d-apertando-as-maos.jpg" />
+               </image>
+               <StackPane.margin>
+                  <Insets left="-2.0" />
+               </StackPane.margin>
+            </ImageView>
+            <Label alignment="TOP_CENTER" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="155.0" text="LOGIN" textAlignment="CENTER" textFill="#ff8a05" StackPane.alignment="TOP_RIGHT">
+               <StackPane.margin>
+                  <Insets right="90.0" top="110.0" />
+               </StackPane.margin>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" prefHeight="20.0" prefWidth="329.0" text="Faça login de sua empresa " textAlignment="CENTER" textFill="#ee8412" StackPane.alignment="TOP_RIGHT">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="150.0" />
+               </StackPane.margin>
+            </Label>
+            <TextField fx:id="senhaField" prefHeight="35.0" prefWidth="400.0" style="-fx-background-radius: 20;" promptText="Senha">
+               <StackPane.margin>
+                  <Insets left="470.0" right="40.0" top="100.0" />
+               </StackPane.margin>
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="emailField" prefWidth="400.0" style="-fx-background-radius: 20;" promptText="Email">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <prefHeight>35.0</prefHeight>
+               <StackPane.margin>
+                  <Insets left="470.0" right="40.0" />
+               </StackPane.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#realizarLogin" prefHeight="33.0" prefWidth="143.0" style="-fx-background-color: #ff8a05; -fx-background-radius: 10;" text="Login" textFill="WHITE" StackPane.alignment="CENTER_RIGHT">
+               <StackPane.margin>
+                  <Insets right="100.0" top="220.0" />
+               </StackPane.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Hyperlink onAction="#irParaTelaCadastro" text="Não possui cadastro?" textAlignment="CENTER" textFill="#e8900d" StackPane.alignment="BOTTOM_RIGHT">
+               <StackPane.margin>
+                  <Insets bottom="80.0" right="110.0" />
+               </StackPane.margin>
+            </Hyperlink>
+         </children>
+      </StackPane>
+   </children>
+</VBox>
